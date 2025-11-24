@@ -79,23 +79,34 @@ footer{
     z-index: 15;
 }
 @keyframes carouselScroll {
-0% { transform: translateX(0); }
-100% { transform: translateX(-50%); }
+from { transform: translateX(0); }
+to { transform: translateX(-50%); }
 }
-#footer-scroll-wrapper {
-height: 100%;
-width: 100%;
-overflow: hidden; 
+.messages{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#releasemessages {
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5rem; 
+    animation: carouselScroll 10s linear infinite;
 
 }
-#footer-scroll-content {
-display: flex;
-width: 100vw;
-animation: carouselScroll 10s linear infinite;
+
+h1{
+    display: inline-block;
+   font-size: 2rem;
+    margin-left: 2%;
 }
-.footer-item {
-font-size: 2rem;
-margin: 0 50px; 
+h2{
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 2%;
 }
 
 

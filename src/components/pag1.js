@@ -128,13 +128,12 @@ const scrollToScreen3 = useCallback(() => {
 
             {}
             <footer>
-                <div id="footer-scroll-wrapper">
-                  <div id="footer-scroll-content" className="text">
-                    <span className="footer-item">Estreno de la beta: 29 de Agosto </span>
-                    <span className="footer-item">Estreno oficial: 9 de Diciembre </span>
-                   
-                    
-                    
+                <div className='messages'>
+                  <div id="releasemessages">
+                     <h1 className='text'>Estreno de la beta: 29 de Agosto</h1>
+                     <h2 className='text'>Estreno oficial: 9 de Diciembre</h2>
+                     <h1 className='text'>Estreno de la beta: 29 de Agosto</h1>
+                     <h2 className='text'>Estreno oficial: 9 de Diciembre</h2>
                   </div>
                 </div>
             </footer>
